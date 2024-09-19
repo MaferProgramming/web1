@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Primeira página HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            margin: 20px;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        p {
+            text-align: justify;
+        }
+        .right-align {
+            text-align: right;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 200px;
+        }
+        ol, ul {
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Maria Fernanda</h1>
+    <nav>
+        <a href="https://github.com/MaferProgramming" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/maria-fernanda-oliveira-luz-180868208/" target="_blank">LinkedIn</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Um pouco sobre mim:</h2>
+    <p><strong>Me chame de Mafer!</strong> Tenho 22 anos. E no momento estou em processo de aprendizagem no curso de análise e desenvolvimento de sistemas. Essa não é minha primeira faculdade, já cursei Biomedicina anteriormente. Eu sei, eu sei...um curso não tem nada a ver com o outro mas aqui estamos (: Eu mudei completamente de vida após eliminar 84kg e hoje em dia sou outra pessoa e em busca de alcançar meus objetivos de vida cada vez mais! Desenvolver tem sido minha área de foco atualmente.</p>
+    <p class="right-align">Nas horas vagas, gosto de explorar novos hobbies. Assim mantendo o equilíbrio entre meu trabalho e lazer! Afinal, é algo que considero importante para garantir criatividade e produtividade.</p>
+</section>
+
+<section>
+    <h2>Minhas Habilidades:</h2>
+    <ol>
+        <li>Desenvolvimento Web (HTML, CSS, JavaScript)</li>
+        <li>Comunicação</li>
+        <li>Raciocínio lógico rápido</li>
+    </ol>
+</section>
+
+<section>
+    <h2>Hobbies e Interesses:</h2>
+    <ul>
+        <li>Fotografia</li>
+        <li>Jogos de Estratégia</li>
+        <li>Academia</li>
+        <li>Boxe</li>
+        <li>Tomar uma com meus amigos (:</li>
+    </ul>
+</section> <!-- Fechei aqui a tag section -->
+
+<section>
+    <h2>Meus níveis de conhecimentos Técnicos até o momento:</h2>
+    <table>
+        <tr>
+            <th>Tecnologia</th>
+            <th>Intermediário</th>
+        </tr>
+        <tr>
+            <th>HTML & CSS</th>
+            <th>Intermediário avançado</th>
+        </tr>
+        <tr>
+            <th>Inglês</th>
+            <th>Avançado</th>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Contato</h2>
+    <form action="https://formspree.io/f/xpwanwlq" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <h3>Gênero:</h3>
+        <input type="radio" id="masculino" name="genero" value="Masculino" required>
+        <label for="masculino">Masculino</label>
+        
+        <input type="radio" id="feminino" name="genero" value="Feminino" required>
+        <label for="feminino">Feminino</label>
+
+        <h3>Interesses:</h3>
+        <input type="radio" id="cyber" name="interesses" value="Cyber Segurança" required>
+        <label for="cyber">Cyber Segurança</label>
+        
+        <input type="radio" id="ia" name="interesses" value="Inteligência Artificial" required>
+        <label for="ia">Inteligência Artificial</label>
+
+        <input type="radio" id="academia" name="interesses" value="Academia" required>
+        <label for="academia">Academia</label>
+
+        <input type="radio" id="reeducacao" name="interesses" value="Reeducação Alimentar" required>
+        <label for="reeducacao">Reeducação Alimentar</label>
+
+        <h3>Mensagem:</h3>
+        <label for="mensagem">Deixe sua mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+</body>
+</html>
